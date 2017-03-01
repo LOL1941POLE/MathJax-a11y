@@ -741,6 +741,8 @@ MathJax.Hub.Register.StartupHook('Sre Ready', function() {
                              'Assistive-ruleset', speech),
                   ITEM.RADIO(['mathspeak-brief', 'Brief'], 'Assistive-ruleset', speech),
                   ITEM.RADIO(['mathspeak-sbrief', 'Superbrief'],
+                             'Assistive-ruleset', speech),
+                  ITEM.RADIO(['mathspeak-nemeth', 'Nemeth'],
                              'Assistive-ruleset', speech)
               ),
               ITEM.SUBMENU(['Chromevox', 'ChromeVox Rules'],
@@ -750,7 +752,7 @@ MathJax.Hub.Register.StartupHook('Sre Ready', function() {
                              speech),
                   ITEM.RADIO(['chromevox-alternative', 'Alternative'],
                              'Assistive-ruleset', speech)
-              )
+                          )
           );
       var submenu = (MENU.FindId('Accessibility') || {}).submenu, index;
       if (submenu) {
